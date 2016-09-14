@@ -1,0 +1,178 @@
+/*
+Project Name: An's Final Project
+Class: GA FEWD
+Author: An Nguyen
+Student Developer @GA in LA
+*/
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+     line-height: 1.4;
+     font-family: 'Open Sans Condensed', sans-serif, Helvetica, Arial, sans-serif;
+     font-weight: 300;
+     font-size: 40px;
+}
+
+.container {
+     width: 1300px;
+     margin: 0 auto;
+}
+
+header {
+     background: #F5F5F5;
+     padding: 10px 0;
+     overflow: hidden;
+/*     width: 1300px;*/
+     font-size: 40px;
+     font-weight: 300;
+}
+
+#page-title {
+     float: left;
+     padding: 0 10px;
+     color: black;
+}
+
+nav ul .menu a {
+     display: inline-block;
+     margin: 0 10px 0 60px;
+     text-decoration: none;
+     float:right;
+     padding: 0 10px;
+}
+
+body {
+     font-size: 40px;
+     font-weight: 300;
+     color: white;
+     opacity: 0.8;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+h1 {
+     padding: 280px 0 0 0;
+     font-size: 70px;
+     font-weight: 700;
+}
+
+.quote {
+     font-style: italic;
+     font-size: 50px;
+}
+
+footer {
+     background: #F5F5F5;
+     font-size: 20px;
+     font-weight: 300;
+     text-align: center;
+     width: auto;
+     color: black;
+}
+
+.icon {
+     height: 40px;
+     transition: .5s all;  
+}
+
+.icon:hover {
+     transform: rotate(720deg);
+}
+
+h4 {
+     font-size: 70px;
+     font-weight: 700;
+     padding: 180px 0 20px 0;
+}
+
+.source-name {
+     padding: 30px;
+}
+
+a.ref {
+     display: inline-block;
+     text-decoration: none;
+     color: white;
+     transition: .5s all;
+     font-size: 40px;
+}
+
+a.ref:hover {
+     font-size: 46px;
+}
+
+.footer {
+     padding: 10px;
+}
+
+
+/******************************************
+/* LAYOUT -- INDEX
+/*******************************************/
+     
+.main .blurb {
+     width: 1300px;
+     margin: auto;
+     height: 748px;
+     background-size: cover;
+     text-align: center;
+     clear: both;
+     background: no-repeat, center center;
+}
+
+
+#wilson {
+     background: url(../images/1-wilson-b.jpg);
+}
+
+#lowery {
+     background: url(../images/2-lowery.jpg);
+}
+
+#west {
+     background: url(../images/3-west.jpg);
+}
+
+#keaton {
+     background: url(../images/4-keaton.jpg);
+}
+
+#kilmer {
+     background: url(../images/5-kilmer.jpg);
+}
+
+#clooney {
+     background: url(../images/6-clooney.jpg);
+}
+
+#bale {
+     background: url(../images/7-bale.jpg);
+}
+
+#affleck {
+     background: url(../images/8-affleck.jpg);
+}
+
+
+/******************************************
+/* LAYOUT -- SOURCES
+/*******************************************/
+
+#sources {
+     background: url(../images/bg-sources.jpg);
+     width: 1300px;
+     height: 748px;
+     background-size: cover;
+}
+
+
+
+
+
+
+
