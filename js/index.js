@@ -23,7 +23,7 @@ $("document").ready(function(){
 
     $(".blurb").click(toggleImage);
 
-    $("nav li:first-of-type").click(openMenu)
+    $("nav li:first-of-type").click(openMenu);
 
 
 //**Functions**
@@ -33,8 +33,19 @@ $("document").ready(function(){
 	}
 
     function toggleImage(){
+    	// Hides all .sub-blurbs
+    	$(".sub-blurb").hide();
+
+    	// Removes class "toggle" of all .blurb's
+    	$(".blurb").removeClass("toggle");
+
+    	// Selects current h2 and adds "toggle" class
         $(this).toggleClass("toggle");
-        $(".sub-blurb").show();
+
+        // Selecting current h2 and finds closest following ".sub-blurb"
+        $(this).find(".sub-blurb").show();
+
+        // $(".sub-blurb").show();
     }
 
     function openMenu(){

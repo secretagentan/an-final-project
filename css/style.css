@@ -54,6 +54,7 @@ h1 {
 
 .icon {
      height: .75em;
+     padding: 10px 0 0 0;
      transition: .5s all;  
 }
 
@@ -65,14 +66,14 @@ h1 {
 nav .line {
      display: none;
      width: 1.25em;
-     height:4px;
+     height:3px;
      background: black;
      border-radius: 1em;
      margin-top: .15em;
 }
 
 nav .line:first-of-type {
-     margin-top: .175em;
+     margin-top: .5em;
 }
 
 body {
@@ -200,6 +201,7 @@ a.ref:hover {
 
 .toggle {
      height: 748px;
+     /*transition: 5s height;*/
 }
 
 .toggle h2 {
