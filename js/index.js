@@ -28,8 +28,12 @@ $("document").ready(function(){
 
 //**Functions**
 	function main(){
+		// Hides all h2 headers at startup
 		$("h2").hide();
+		$("h4").hide();
+		// Fades all h2 headers in
 		$("h2").fadeIn(2000);
+		$("h4").fadeIn(2000);
 	}
 
     function toggleImage(){
@@ -45,7 +49,6 @@ $("document").ready(function(){
         // Selecting current h2 and finds closest following ".sub-blurb"
         $(this).find(".sub-blurb").show();
 
-        // $(".sub-blurb").show();
     }
 
     function openMenu(){

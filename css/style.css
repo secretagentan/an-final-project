@@ -66,10 +66,10 @@ h1 {
 nav .line {
      display: none;
      width: 1.25em;
-     height:3px;
+     height: 2px;
      background: black;
      border-radius: 1em;
-     margin-top: .15em;
+     margin-top: .2em;
 }
 
 nav .line:first-of-type {
