@@ -45,10 +45,11 @@ $("document").ready(function(){
 
     	// Selects current h2 and adds "toggle" class
         $(this).toggleClass("toggle");
+        // $(this).addClass("toggle");
+        // $(this).slideToggle(400);
 
         // Selecting current h2 and finds closest following ".sub-blurb"
         $(this).find(".sub-blurb").show();
-
     }
 
     function openMenu(){
