@@ -17,67 +17,7 @@ html {
      background: #F5F5F5;
 }
 
-.container {
-     width: 1280px;
-     margin: 0 auto;
-}
-
-h1 {
-     font-size: .75em;
-/*     line-height: 1;*/
-     float: left;
-     padding: 10px .25em;
-}
-
-#page-header {
-     background: #F5F5F5;
-     color: black;
-     overflow: hidden;
-     position: relative;
-/*     padding: 10px 0 0 0;*/
-     font-weight: 300;
-}
-
-#page-header nav {
-     float: right;
-}
-
-#page-header nav li {
-     float: left;
-}
-
-#page-header nav a {
-     display: inline-block;
-     padding: 0 .25em;
-     margin: 0 .25em 0 1.5em;
-}
-
-.icon {
-     height: .75em;
-     padding: 10px 0 0 0;
-     transition: .5s all;  
-}
-
-.icon:hover {
-     transform: rotate(1080deg);
-}
-
-/*hamburger styling*/
-nav .line {
-     display: none;
-     width: 1.25em;
-     height: 2px;
-     background: black;
-     border-radius: 1em;
-     margin-top: .2em;
-}
-
-nav .line:first-of-type {
-     margin-top: .5em;
-}
-
 body {
-/*     font-size: 1em;*/
      font-weight: 300;
      color: white;
      opacity: 0.8;
@@ -87,8 +27,54 @@ body {
     display: none; 
 }
 
+.container {
+     width: 1280px;
+     margin: 0 auto;
+}
+
+/*header styling*/
+#page-header {
+     background: #F5F5F5;
+     position: relative;
+     overflow: hidden;
+     font-weight: 300;
+     color: black;
+}
+
+h1 {
+     font-size: .75em;
+     float: left;
+     padding: 10px .25em;
+}
+
+span {
+     display: none;
+}
+
+nav {
+     float: right;
+}
+
+ul li {
+     display: inline-block;
+}
+
+ul li a {
+     display: block;
+     padding: 0 .5em;
+}
+
+.icon {
+     height: .75em;
+     padding: 10px 0 0 0;
+     transition: .5s all;  
+}
+
+.icon:hover {
+     transform: rotate(1440deg);
+}
+
 h2 {
-/*     padding: 280px 0 0 0;*/
      font-size: 1.75em;
      font-weight: 700;
 }
@@ -98,7 +84,7 @@ h2 {
      font-size: 1.25em;
 }
 
-footer {
+.footer {
      background: #F5F5F5;
      font-size: .5em;
      font-weight: 300;
@@ -133,6 +119,7 @@ a.ref:hover {
      padding: .25em;
 }
 
+
 /******************************************
 /* LAYOUT -- INDEX
 /*******************************************/
@@ -146,9 +133,8 @@ a.ref:hover {
      background: no-repeat, center center;
 }
 
-
 #wilson {
-     background: url(../images/1-wilson-b.jpg);
+     background: url(../images/1-wilson.jpg);
 }
 
 #lowery {
@@ -200,21 +186,19 @@ a.ref:hover {
 /*******************************************/
 
 .toggle {
-     height: 748px;
-     /*transition: 5s height;*/
+     height: 640px;     
 }
 
 .toggle h2 {
-     padding: 280px 0 0 0;
+     padding: 230px 0 0 0;
 }
-
 
 
 /******************************************
 /* MOBILE VERSION
 /*******************************************/
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 480px){
 
      body {
           font-size: 20px;
@@ -225,11 +209,15 @@ a.ref:hover {
      }
 
      h2, h4 {
-          font-size: 30px;
+          font-size: 1.5em;
      }
 
-     h3, p {
-          font-size: 20px;
+     h3 {
+          font-size: .7em;
+     }
+
+     .quote {
+          font-size: .9em;
      }
 
      .container {
@@ -237,43 +225,105 @@ a.ref:hover {
      }
 
      .blurb {
-         width: 100%;
-/*         margin: auto;
-         background-size: cover;
-         text-align: center;
-         clear: both;
-         background: no-repeat, center center;*/
+          width: 100%;
+          background: no-repeat, center center;
+     }
+
+     #wilson {
+          background: url(../images/1-wilson-m.jpg);
+     }
+
+     #lowery {
+          background: url(../images/2-lowery-m.jpg);
+     }
+
+     #west {
+          background: url(../images/3-west-m.jpg);
+     }
+
+     #keaton {
+          background: url(../images/4-keaton-m.jpg);
+     }
+
+     #kilmer {
+          background: url(../images/5-kilmer-m.jpg);
+     }
+
+     #clooney {
+          background: url(../images/6-clooney-m.jpg);
+     }
+
+     #bale {
+          background: url(../images/7-bale-m.jpg);
+     }
+
+     #affleck {
+          background: url(../images/8-affleck-m.jpg);
+     }
+
+
+     .toggle {
+          height: 270px;   
+     }
+
+     .toggle h2 {
+          padding: 90px 0 0 0;
      }
 
      #sources {
-          background: url(../images/bg-sources.jpg);
-          width: 100%;
-/*          background-size: cover;
-          margin: auto;
-          text-align: center;
-          clear: both;*/
+          background: url(../images/bg-sources-m.jpg);
+          height: 270px;
+     }
+
+     h4 {
+          padding-top: 40px;
      }
      
 /*hamburger menu*/
-     nav .line {
+     ul {
+          height: 0em;
+          transition: all .5s;
+     }
+
+     ul li {
           display: block;
      }
 
-     #page-header nav li:first-child {
-          display: block;
+     nav, h1 {
+          float: none;
+     }
+
+     nav ul li:first-child{
           position: absolute;
           top: .25em;
           right: .5em;
      }
 
-     ul .icon {
-          height: 0;
-          transition: all 1s;
+     nav .line:first-of-type {
+          margin-top: .5em;
+     }
+
+/*hamburger styling*/
+     .line {
+          width: 1.25em;
+          height: 2px;
+          background: black;
+          border-radius: 1em;
+          margin-top: .2em;
      }
 
      .open {
-          height: 140px;
+          height: 3em;
      }
-
+     
+     .icon {
+          display: none;
+     }
+     
+     a {
+          text-decoration: none;
+          color: black;
+          font-size: .75em;
+     }
 
 }

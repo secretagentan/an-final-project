@@ -1,20 +1,6 @@
-// $("document").ready(function(){
-
-// // I'm trying to make it so that the background image for each actor expands when you click on the div, but I'm not figuring out how to make it work =(
-// 	$(".blurb").click(toggleImage);
-
-// 	function toggleImage(){
-// 		$(this).addClass("toggle");
-// 		$(".toggle").slideToggle(); 
-// 	}
-
-// 	// $("nav li:first-of-type").click(function(){
-// 	// 	$(this).parent().toggleClass("open");
-// 	// }
-
-// })
-
 $("document").ready(function(){
+
+    // Hides text below actor names
 	$(".sub-blurb").hide();
 	
 
@@ -28,15 +14,17 @@ $("document").ready(function(){
 
 //**Functions**
 	function main(){
-		// Hides all h2 headers at startup
+        event.preventDefault();
+		// Hides all h2 & h4 headers at startup
 		$("h2").hide();
 		$("h4").hide();
-		// Fades all h2 headers in
+		// Fades all h2 & h4 headers in
 		$("h2").fadeIn(2000);
 		$("h4").fadeIn(2000);
 	}
 
     function toggleImage(){
+        event.preventDefault();
     	// Hides all .sub-blurbs
     	$(".sub-blurb").hide();
 
@@ -45,15 +33,16 @@ $("document").ready(function(){
 
     	// Selects current h2 and adds "toggle" class
         $(this).toggleClass("toggle");
-        // $(this).addClass("toggle");
-        // $(this).slideToggle(400);
 
-        // Selecting current h2 and finds closest following ".sub-blurb"
+        // Selects current h2 and finds closest following ".sub-blurb"
         $(this).find(".sub-blurb").show();
     }
 
     function openMenu(){
-     $(this).parent().toggleClass("open");
+        event.preventDefault();
+        $(this).parent().toggleClass("open");
+        $(".icon").hide();
+        $(".navi").show();
     }
 
 })
